@@ -1,3 +1,4 @@
+package com.example.helloworld;
 import com.google.android.glass.app.Card;
 import com.google.android.glass.timeline.LiveCard;
 
@@ -11,6 +12,7 @@ import android.os.IBinder;
 public class HelloWorldActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 		Card helloWorld = new Card(this);
 		helloWorld.setText("Hello, World!");
 		helloWorld.setFootnote("Google Glass Crash Course");
